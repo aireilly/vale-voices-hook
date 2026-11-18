@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/vale-sync.sh",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/vale-sync.sh\"",
             "timeout": 60
           }
         ]
@@ -18,7 +18,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/vale-edit.sh",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/vale-edit.sh\"",
             "timeout": 15
           }
         ]
