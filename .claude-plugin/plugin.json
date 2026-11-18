@@ -1,0 +1,19 @@
+{
+  "name": "vale-voices",
+  "version": "0.1.0",
+  "description": "Lint Markdown and AsciiDoc files with Vale Voices after every edit and send error-level alerts back to the agent.",
+  "author": {
+    "name": "aireilly"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "vale",
+    "prose",
+    "linting",
+    "markdown",
+    "asciidoc",
+    "hooks"
+  ],
+  "homepage": "https://github.com/aireilly/vale-voices-hook",
+  "repository": "https://github.com/aireilly/vale-voices-hook"
+}

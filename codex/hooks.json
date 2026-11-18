@@ -1,0 +1,18 @@
+{
+  "description": "Lint .md and .adoc files after file edits with Vale Voices.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "apply_patch|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "<repo_path>/scripts/vale-edit.sh",
+            "timeout": 15,
+            "statusMessage": "Checking edited prose with Vale Voices"
+          }
+        ]
+      }
+    ]
+  }
+}

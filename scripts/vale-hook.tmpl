@@ -1,0 +1,7 @@
+{{- /*
+  One alert per line, tab-separated: severity, line, check, message.
+  The edit hook parses this with awk, so the format and parser move together.
+  Vale messages are single-line by convention.
+*/ -}}
+{{- range .Files}}{{- range .Alerts}}{{.Severity}}	{{.Line}}	{{.Check}}	{{.Message}}
+{{end}}{{- end}}

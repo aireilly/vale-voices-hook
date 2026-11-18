@@ -1,0 +1,14 @@
+{
+  "name": "vale-voices",
+  "owner": {
+    "name": "aireilly"
+  },
+  "description": "Vale Voices prose linting hooks for coding agents",
+  "plugins": [
+    {
+      "name": "vale-voices",
+      "source": ".",
+      "description": "Lint Markdown and AsciiDoc files with Vale Voices after every edit"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "description": "Lint .md and .adoc files after file edits with Vale Voices.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/vale-sync.sh",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/vale-edit.sh",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
